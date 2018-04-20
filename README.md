@@ -8,7 +8,6 @@ O Desafio consiste em criar um layout simples com boxes, títulos, imagens e alg
 * Boa lógica de Programação
 * Angular 2+, React ou Vue
 * ES6+
-* Consumo de API REST
 * TDD/BDD/DDD
 * Boas Práticas e Padrões
 * Performance e Acessibilidade
@@ -16,7 +15,7 @@ O Desafio consiste em criar um layout simples com boxes, títulos, imagens e alg
 
 ### Obrigatórios
 * O layout deve conter Header, Vitrine de produtos(cada produto deve ter um id, título, preço e um botão de comprar) e um carrinho de compra com o valor total dos produtos e os produtos escolhindos.
-* Popular uma vitrine de produtos a partir de um JSON(Pode ser um Mock, mas se criar uma API REST para os produtos ganha mais uns pontos)
+* Popular uma vitrine de produtos a partir de um JSON
 
 ### Funcionalidades Desejáveis
 * Ordernar Produtos
@@ -29,6 +28,7 @@ O Desafio consiste em criar um layout simples com boxes, títulos, imagens e alg
 * Testes com Jest, Karma ou Mocha
 * Design Patterns, Boas Práticas e Padrões de Arquitetura em JS
 * Performance(cada micro otimização vai ser muito bem vista) e Acessibilidade
+* Consumo de API REST
 
 #### Observações
 * Se utilizar React, utilize o Redux e Enzyme
