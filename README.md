@@ -2,7 +2,7 @@
 
 Faça um fork deste projeto e ao final submeta um Pull Request.
 
-O Desafio consiste em criar um layout simples com boxes, títulos e imagens algumas funcionalidades/iterações básicas de um e commerce.
+O Desafio consiste em criar um layout simples com boxes, títulos, imagens e algumas funcionalidades/iterações básicas de um e-commerce.
 
 ### O que esperamos ?
 * Boa lógica de Programação
@@ -15,7 +15,7 @@ O Desafio consiste em criar um layout simples com boxes, títulos e imagens algu
 * Instalação de depências automáticas
 
 ### Obrigatórios
-* O layout deve conter Header, Vitrine de produtos(cada produto deve um id, título, preço e um botão de comprar) e um carrinho de compra com o valor total dos produtos e os produtos escolhindos.
+* O layout deve conter Header, Vitrine de produtos(cada produto deve ter um id, título, preço e um botão de comprar) e um carrinho de compra com o valor total dos produtos e os produtos escolhindos.
 * Popular uma vitrine de produtos a partir de um JSON(Pode ser um Mock, mas se criar uma API REST para os produtos ganha mais uns pontos)
 
 ### Funcionalidades Desejáveis
