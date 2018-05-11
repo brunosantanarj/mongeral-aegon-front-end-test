@@ -35,4 +35,5 @@ O Desafio consiste em criar um layout simples com boxes, títulos, imagens e alg
 * || || Vue, utilize o vuex para gerencia a store
 * || || Angular, utilize o RxJS
 * Esperamos que entregue o desafio 2 dias após ter feito o Fork
+* É interessante que você faça commits pequenos para que possamos entender a sua linha de raciocínio.
 
