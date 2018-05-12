@@ -1,0 +1,7 @@
+{
+    "products" : [
+        {"id": 1,"name": "Caneta", "quantity": 5},
+        {"id": 2,"name": "Lápis", "quantity": 15},
+        {"id": 3,"name": "Borracha", "quantity": 8}
+    ]
+}
