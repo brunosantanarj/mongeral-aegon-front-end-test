@@ -1,18 +1,14 @@
 <template>
-  <div id="app">
-    <Products></Products  >
+  <div id="app" class='container'>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Products from './components/Products.vue'
-
 export default {
-  components: {
-    Products
+  name: 'app',
+  data () {
+    return {}
   }
 }
 </script>
-
-<style>
-</style>

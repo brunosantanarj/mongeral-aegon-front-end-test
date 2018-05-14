@@ -1,10 +1,26 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
+import store from './store/index.js'
+
 import App from './App.vue'
-import VueResource from 'vue-resource'
+import Products from './components/Products.vue'
 
-Vue.use(VueResource)
+Vue.use(VueRouter)
 
+// Define routes
+const routes = [
+  { path: '/', component: Products }
+]
+
+// Register routes
+const router = new VueRouter({
+  routes
+})
+
+/* eslint-disable */
 new Vue({
-  el: 'body',
-  components: { App }
+  el: '#app',
+  render: h => h(App),
+  router,
+  store
 })
