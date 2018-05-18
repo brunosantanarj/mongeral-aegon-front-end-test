@@ -11,17 +11,53 @@ const URL = 'http://localhost:3000/products'
 
 // initial state
 const state = {
+  added: [],
   products: [],
+  selectedProduct: {
+    'id': 1,
+    'name': 'Caneta',
+    'description': 'Caneta escolar Batman',
+    'price': '25.00',
+    'image': 'caneta-batman.jpg'
+  },
   loading: true
 }
 
 // getters
 const getters = {
+  allProducts: state => state.products,
+  cartProducts: state => {
+    return state.added.map(({ id, quantity }) => {
+      const product = state.products.find(p => p.id === id)
+      return {
+        name: product.name,
+        price: product.price,
+        quantity
+      }
+    })
+  }
 }
 
 // mutations
 const mutations = {
-  [types.ADD_PRODUCT] (state, { id }) {
+  [types.ADD_TO_CART] (state, { id }) {
+    const record = state.added.find(p => p.id === id)
+
+    if (!record) {
+      state.added.push({
+        id,
+        quantity: 1
+      })
+    } else {
+      record.quantity++
+    }
+  },
+  [types.SET_SELECTED_PRODUCT] (state, { product }) {
+    state.selectedProduct = product
+
+    console.log('oo')
+    console.log(product)
+    console.log(state.selectedProduct)
   },
   updateProducts (state, products) {
     state.products = products
@@ -41,9 +77,14 @@ const actions = {
       commit('changeLoadingState', false)
     })
   },
-  addProduct ({ commit }, product) {
-    commit(types.ADD_PRODUCT, {
+  addToCart ({ commit }, product) {
+    commit(types.ADD_TO_CART, {
       id: product.id
+    })
+  },
+  setSelectedProduct ({ commit }, product) {
+    commit(types.SET_SELECTED_PRODUCT, {
+      product: product
     })
   }
 }
