@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h2 class="size-3 my-2">Total de {{products.length}} produtos</h2>
-
+  <div class="products-list">
     <div class="columns is-multiline">
       <div class="column is-one-quarter" v-for="product in products" :key="product.id">
         <div class="box">
@@ -9,7 +7,7 @@
           <p class="text-weight-bold size-2 text-centered">{{product.name}}</p>
           <p class="text-centered">R${{product.price}}</p>
           <div class="text-centered">
-            <button @click='addToCart(product)' class='bt-default bg-info-color mt-1'>
+            <button @click='addToCart(product)' class='bt-buy bt-default bg-info-color mt-1'>
               <span class="icon">
                 <i class="fa fa-shopping-cart"></i>
               </span>

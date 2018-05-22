@@ -1,4 +1,4 @@
-# products-app
+# Cart app
 
 > A Vue.js project
 
@@ -9,7 +9,10 @@
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm start
+
+# run tests
+npm runn unit
 
 # build for production with minification
 npm run build

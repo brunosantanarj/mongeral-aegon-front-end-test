@@ -54,10 +54,6 @@ const mutations = {
   },
   [types.SET_SELECTED_PRODUCT] (state, { product }) {
     state.selectedProduct = product
-
-    console.log('oo')
-    console.log(product)
-    console.log(state.selectedProduct)
   },
   updateProducts (state, products) {
     state.products = products

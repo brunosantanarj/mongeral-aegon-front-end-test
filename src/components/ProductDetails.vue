@@ -33,9 +33,6 @@ export default {
     closeModal: function(){
       this.$emit('close-modal')
     }
-  },
-  created() {
-    console.log(this.data)
   }
 }
 </script>
