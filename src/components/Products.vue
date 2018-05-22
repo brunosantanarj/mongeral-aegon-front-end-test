@@ -1,15 +1,15 @@
 <template>
-  <div class="container">
+  <div>
     <h2 class="title is-4">Total de {{products.length}} produtos</h2>
 
     <div class="columns is-multiline">
       <div class="column is-one-quarter" v-for="product in products" :key="product.id">
         <div class="box">
           <img v-bind:src="`./src/assets/images/${product.image}`" @click='viewProducDetails(); setSelectedProduct(product);' v-bind:style="{ cursor: 'pointer' }"/>
-          <p class="has-text-weight-bold is-size-6 has-text-centered">{{product.name}}</p>
-          <p class="has-text-centered">R${{product.price}}</p>
-          <div class="has-text-centered">
-            <button @click='addToCart(product)' class='button is-info'>
+          <p class="text-weight-bold size-2 text-centered">{{product.name}}</p>
+          <p class="text-centered">R${{product.price}}</p>
+          <div class="text-centered">
+            <button @click='addToCart(product)' class='bt-default bg-info-color mt-1'>
               <span class="icon">
                 <i class="fa fa-shopping-cart"></i>
               </span>

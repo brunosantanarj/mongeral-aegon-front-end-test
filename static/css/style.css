@@ -1,0 +1,53 @@
+.primary-color {
+  color: #00d1b2; }
+
+.info-color {
+  color: #3273dc; }
+
+.bg-info-color {
+  color: #fff;
+  background-color: #3273dc; }
+
+.size-1 {
+  font-size: 0.75em; }
+
+.size-2 {
+  font-size: 1em; }
+
+.size-3 {
+  font-size: 1.25em; }
+
+.size-4 {
+  font-size: 1.5em; }
+
+.size-5 {
+  font-size: 1.75em; }
+
+.size-6 {
+  font-size: 2em; }
+
+.mt-1 {
+  margin-top: 0.25em; }
+
+.text-centered {
+  text-align: center; }
+
+.text-weight-bold {
+  font-weight: 700 !important; }
+
+.container {
+  padding-top: 3em; }
+
+.logo {
+  background: url("images/logo.png") no-repeat;
+  display: inline-block;
+  height: 113px;
+  width: 363px; }
+
+.bt-default {
+  border: 1px solid #b6b6b6;
+  border-radius: 3px;
+  padding: 0.5em; }
+
+.bt-checkout {
+  float: right; }

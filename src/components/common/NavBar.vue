@@ -1,22 +1,14 @@
 <template>
-  <div class="nav-item is-tab" :class="{ 'active-bottom-border': $route.path === '/cart' }">
-    <div class="field is-grouped">
-      <p class="control">
-        <router-link to='/' class="button is-primary">
-          <span class="icon">
-            <i class="fa fa-pencil"></i>
-          </span>
-          <span>Vitrine</span>
-        </router-link>
-        
-        <router-link to='/cart' class="button is-info">
-          <span class="icon">
-            <i class="fa fa-shopping-cart"></i>
-          </span>
-          <span>Checkout ({{itemsInCart}})</span>
-        </router-link>
-      </p>
-    </div>
+  <div>
+    <router-link to='/' class="logo">
+    </router-link>
+    
+    <router-link to='/cart' class="bt-default bt-checkout info-color">
+      <span class="icon">
+        <i class="fa fa-shopping-cart"></i>
+      </span>
+      <span>Checkout ({{itemsInCart}})</span>
+    </router-link>
   </div>
 </template>
 
