@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="title is-4">Total de {{products.length}} produtos</h2>
+    <h2 class="size-3 my-2">Total de {{products.length}} produtos</h2>
 
     <div class="columns is-multiline">
       <div class="column is-one-quarter" v-for="product in products" :key="product.id">
