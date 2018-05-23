@@ -30,6 +30,7 @@ const getters = {
     return state.added.map(({ id, quantity }) => {
       const product = state.products.find(p => p.id === id)
       return {
+        id: product.id,
         name: product.name,
         price: product.price,
         quantity
@@ -60,6 +61,17 @@ const mutations = {
   },
   changeLoadingState (state, loading) {
     state.loading = loading
+  },
+  [types.REMOVE_FROM_CART] (state, { id }) {
+    console.log(state.added)
+    const record = state.added.find(p => p.id === id)
+
+    if (record.quantity === 1) {
+      const index = state.added.indexOf(record)
+      state.added.splice(index, 1)
+    } else {
+      record.quantity--
+    }
   }
 }
 
@@ -81,6 +93,13 @@ const actions = {
   setSelectedProduct ({ commit }, product) {
     commit(types.SET_SELECTED_PRODUCT, {
       product: product
+    })
+  },
+  removefromCart ({ commit }, product) {
+    console.log(product)
+
+    commit(types.REMOVE_FROM_CART, {
+      id: product.id
     })
   }
 }

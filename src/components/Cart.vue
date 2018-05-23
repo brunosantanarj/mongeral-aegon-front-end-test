@@ -20,7 +20,7 @@
             <td>${{ product.price }}</td>
             <td>{{ product.quantity }}</td>
             <td>
-              <span class="icon">
+              <span class="icon" @click='removefromCart(product)'>
                 <i class="fa fa-trash"></i>
               </span>
             </td>
@@ -36,7 +36,7 @@
   </div>
 </template>
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 export default {
   computed: {
     ...mapGetters({
