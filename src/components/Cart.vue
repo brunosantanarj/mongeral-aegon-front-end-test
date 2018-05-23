@@ -15,14 +15,14 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="product in products" :key="product.id">
+        <tr v-for="product in products" :key="product.id" class="tr-product-added">
             <td>{{ product.name }}</td>
             <td>${{ product.price }}</td>
             <td>{{ product.quantity }}</td>
             <td>
-              <span class="icon" @click='removefromCart(product)'>
+              <a href="javascript:void(0)" class="icon bt-remove-product" @click='removefromCart(product)'>
                 <i class="fa fa-trash"></i>
-              </span>
+              </a>
             </td>
           </tr>
           <tr>

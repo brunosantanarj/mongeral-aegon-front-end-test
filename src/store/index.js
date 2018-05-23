@@ -96,8 +96,6 @@ const actions = {
     })
   },
   removefromCart ({ commit }, product) {
-    console.log(product)
-
     commit(types.REMOVE_FROM_CART, {
       id: product.id
     })
