@@ -63,7 +63,6 @@ const mutations = {
     state.loading = loading
   },
   [types.REMOVE_FROM_CART] (state, { id }) {
-    console.log(state.added)
     const record = state.added.find(p => p.id === id)
 
     if (record.quantity === 1) {
