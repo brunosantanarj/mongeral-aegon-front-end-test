@@ -1,0 +1,36 @@
+@import 'variables';
+
+.primary-color{color: $primary-color;}
+.info-color{color: $info-color;}
+
+.bg-info-color{color: $white-color; background-color: $info-color;}
+
+.size-1{font-size: $size-1;}
+.size-2{font-size: $size-2;}
+.size-3{font-size: $size-3;}
+.size-4{font-size: $size-4;}
+.size-5{font-size: $size-5;}
+.size-6{font-size: $size-6;}
+
+.mt-1{margin-top: 0.25em}
+.my-1{margin-top: 0.25em; margin-bottom: 0.25em;}
+.my-2{margin-top: 0.5em; margin-bottom: 0.5em;}
+
+.text-centered{text-align: center;}
+.text-weight-bold{font-weight: 700!important;}
+
+.container{padding-top: 3em;}
+
+.logo{
+  background: url('images/logo.png') no-repeat; 
+  display: inline-block;
+  height: 113px; 
+  width: 363px;
+}
+
+.bt-default{
+  border: 1px solid #b6b6b6;
+  border-radius: 3px;
+  padding: 0.5em;
+}
+.bt-checkout{float: right;}

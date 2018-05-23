@@ -1,39 +1,21 @@
-# Desafio Front-End Mongeral Aegon
+# Cart app
 
-Faça um fork deste projeto e ao final submeta um Pull Request.
+> A Vue.js project
 
-O Desafio consiste em criar um layout simples com boxes, títulos, imagens e algumas funcionalidades/iterações básicas de um e-commerce.
+## Build Setup
 
-### O que esperamos ?
-* Boa lógica de Programação
-* Angular 2+, React ou Vue
-* ES6+
-* TDD/BDD/DDD
-* Boas Práticas e Padrões
-* Performance e Acessibilidade
-* Instalação de depências automáticas
+``` bash
+# install dependencies
+npm install
 
-### Obrigatórios
-* O layout deve conter Header, Vitrine de produtos(cada produto deve ter um id, título, preço e um botão de comprar) e um carrinho de compra com o valor total dos produtos e os produtos escolhindos.
-* Popular uma vitrine de produtos a partir de um JSON
+# serve with hot reload at localhost:8080
+npm start
 
-### Funcionalidades Desejáveis
-* Ordernar Produtos
-* Adicionar e Remover produtos do carrinho
-* Valor Total dos produtos no carrinho
+# run tests
+npm runn unit
 
-### Desejáveis técnicos que agregam pontos
-* Design Responsivo, CSS GRID, Flexbox, SCSS, boas práticas e padrões de arquitetura CSS
-* Padrões eslint ou tslint(para angular)
-* Testes com Jest, Karma ou Mocha
-* Design Patterns, Boas Práticas e Padrões de Arquitetura em JS
-* Performance(cada micro otimização vai ser muito bem vista) e Acessibilidade
-* Consumo de API REST
+# build for production with minification
+npm run build
+```
 
-#### Observações
-* Se utilizar React, utilize o Redux e Enzyme
-* || || Vue, utilize o vuex para gerencia a store
-* || || Angular, utilize o RxJS
-* Esperamos que entregue o desafio 2 dias após ter feito o Fork
-* É interessante que você faça commits pequenos para que possamos entender a sua linha de raciocínio.
-
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
