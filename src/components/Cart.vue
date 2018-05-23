@@ -11,6 +11,7 @@
           <td>Nome</td>
           <td>Preço</td>
           <td>Quantidade</td>
+          <td>Remover</td>
         </tr>
       </thead>
       <tbody>
@@ -18,6 +19,11 @@
             <td>{{ product.name }}</td>
             <td>${{ product.price }}</td>
             <td>{{ product.quantity }}</td>
+            <td>
+              <span class="icon">
+                <i class="fa fa-trash"></i>
+              </span>
+            </td>
           </tr>
           <tr>
             <td><b>Total:</b></td>
@@ -45,7 +51,10 @@ export default {
   methods: {
     checkout(){
       alert('Total R$' + this.total)
-    }
+    },
+    ...mapActions([
+      'removefromCart'
+    ])
   }
 }
 </script>
