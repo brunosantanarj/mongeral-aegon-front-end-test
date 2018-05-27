@@ -35,6 +35,7 @@ const Carrinho = styled('button')`
   font-weight: 700;
   justify-content: center;
   padding: 0;
+  text-align: center;
 
   &:hover {
     background: ${colors.cinzaClaro};

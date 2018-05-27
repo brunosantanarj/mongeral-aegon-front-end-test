@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'react-emotion';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import { DataContext } from './../store/DataContext';
 import colors from '../styles/colors';
@@ -9,9 +10,22 @@ const CarrinhoOverlay = styled('div')`
   height: 100vh;
   background: rgba(0, 0, 0, 0.6);
   position: fixed;
+  transition: all 0.25s ease-in-out;
   top: 0;
   left: 0;
   z-index: 5;
+
+  &.fade-enter {
+    opacity: 0;
+  }
+
+  &.fade-enter.fade-enter-active {
+    opacity: 1;
+  }
+
+  &.fade-exit {
+    opacity: 0;
+  }
 `;
 
 const CarrinhoMenu = styled('div')`
@@ -21,12 +35,29 @@ const CarrinhoMenu = styled('div')`
   background: white;
   overflow-y: auto;
   position: fixed;
+  transition: all 0.25s ease-in-out;
   top: 0;
   right: 0;
   z-index: 6;
+
+  &.slide-enter {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  &.slide-enter.slide-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  &.slide-exit {
+    transform: translateX(100%);
+    opacity: 0;
+  }
 `;
 
 const Fechar = styled('button')`
+  background: none;
   border: none;
   cursor: pointer;
   font-size: 15px;
@@ -69,9 +100,25 @@ const CarrinhoItem = styled('div')`
   display: flex;
   align-items: center;
   padding: 15px 0;
+  transition: all 0.15s ease-in-out;
 
   &:not(:last-of-type) {
     border-bottom: 1px solid ${colors.cinzaClaro};
+  }
+
+  &.fadeSlide-enter {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+
+  &.fadeSlide-enter.fadeSlide-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  &.fadeSlide-exit {
+    transform: translateX(20%);
+    opacity: 0;
   }
 `;
 
@@ -116,47 +163,74 @@ const Remover = styled('button')`
   }
 `;
 
+const Total = styled('div')``;
+
 const Carrinho = () => (
   <DataContext.Consumer>
-    {({ state, toggleCarrinho, removerCarrinho }) =>
-      state.carrinhoAberto ? (
-        <CarrinhoOverlay>
-          <CarrinhoMenu>
-            <Fechar onClick={toggleCarrinho}>Fechar</Fechar>
+    {({ state, toggleCarrinho, removerCarrinho }) => (
+      <CSSTransition
+        in={state.carrinhoAberto}
+        timeout={250}
+        classNames="fade"
+        mountOnEnter
+        unmountOnExit>
+        {animation => (
+          <CarrinhoOverlay>
+            <CSSTransition
+              in={animation === 'entered'}
+              timeout={250}
+              classNames="slide"
+              mountOnEnter
+              unmountOnExit>
+              <CarrinhoMenu>
+                <Fechar onClick={toggleCarrinho}>Fechar</Fechar>
 
-            {state.produtosNoCarrinho.length > 0 ? (
-              <CarrinhoLista>
-                {state.produtosNoCarrinho.map(fruta => (
-                  <CarrinhoItem key={fruta.id}>
-                    <CarrinhoImagem>
-                      <img src={fruta.imagem} alt={fruta.nome} />
-                    </CarrinhoImagem>
-                    <CarrinhoTexto>
-                      <h3>
-                        {fruta.nome} X {fruta.quantidade}
-                      </h3>
-                      <p>{fruta.valor}</p>
-                      <Remover onClick={() => removerCarrinho(fruta.id)}>
-                        Remover
-                      </Remover>
-                    </CarrinhoTexto>
-                  </CarrinhoItem>
-                ))}
-              </CarrinhoLista>
-            ) : (
-              <Vazio>
-                <div>
-                  <span role="img" aria-label="Carinha apreensiva">
-                    😰
-                  </span>
-                  <p>O carrinho está vázio!</p>
-                </div>
-              </Vazio>
-            )}
-          </CarrinhoMenu>
-        </CarrinhoOverlay>
-      ) : null
-    }
+                {state.produtosNoCarrinho.length > 0 ? (
+                  <Fragment>
+                    <CarrinhoLista>
+                      <TransitionGroup>
+                        {state.produtosNoCarrinho.map(fruta => (
+                          <CSSTransition
+                            key={fruta.id}
+                            timeout={150}
+                            classNames="fadeSlide">
+                            <CarrinhoItem key={fruta.id}>
+                              <CarrinhoImagem>
+                                <img src={fruta.imagem} alt={fruta.nome} />
+                              </CarrinhoImagem>
+                              <CarrinhoTexto>
+                                <h3>
+                                  {fruta.nome} X {fruta.quantidade}
+                                </h3>
+                                <p>{fruta.valor}</p>
+                                <Remover
+                                  onClick={() => removerCarrinho(fruta.id)}>
+                                  Remover
+                                </Remover>
+                              </CarrinhoTexto>
+                            </CarrinhoItem>
+                          </CSSTransition>
+                        ))}
+                      </TransitionGroup>
+                    </CarrinhoLista>
+                    <Total>Total: R$ {state.valorTotal}</Total>
+                  </Fragment>
+                ) : (
+                  <Vazio>
+                    <div>
+                      <span role="img" aria-label="Carinha apreensiva">
+                        😰
+                      </span>
+                      <p>O carrinho está vázio!</p>
+                    </div>
+                  </Vazio>
+                )}
+              </CarrinhoMenu>
+            </CSSTransition>
+          </CarrinhoOverlay>
+        )}
+      </CSSTransition>
+    )}
   </DataContext.Consumer>
 );
 

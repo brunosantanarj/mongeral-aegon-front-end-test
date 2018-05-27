@@ -11,9 +11,22 @@ const frutasComQuantidade = frutas.map(fruta => {
 class DataProvider extends Component {
   state = {
     produtos: [...frutasComQuantidade],
-    // produtos: [...frutas],
     carrinhoAberto: false,
-    produtosNoCarrinho: []
+    produtosNoCarrinho: [],
+    valorTotal: 0
+  };
+
+  calculaTotal = () => {
+    const converteValor = valor => {
+      const removeCifrao = valor.replace('R$ ', '');
+      const resultado = parseFloat(removeCifrao.replace(',', '.'), 10);
+      return resultado;
+    };
+    const total = this.state.produtosNoCarrinho.reduce((a, b) => {
+      return a + converteValor(b.valor);
+    }, 0);
+
+    return total.toString().replace('.', ',');
   };
 
   toggleCarrinho = () => {
@@ -40,20 +53,26 @@ class DataProvider extends Component {
       );
       copiaDoProdutoExistente.quantidade += 1;
 
-      this.setState({
-        produtosNoCarrinho: [
-          ...restanteDosProdutos,
-          { ...copiaDoProdutoExistente }
-        ]
-      });
+      this.setState(
+        {
+          produtosNoCarrinho: [
+            ...restanteDosProdutos,
+            { ...copiaDoProdutoExistente }
+          ]
+        },
+        () => this.setState({ valorTotal: this.calculaTotal() })
+      );
     } else {
       const filtrarProdutos = produtos.filter(produto => id === produto.id);
-      this.setState({
-        produtosNoCarrinho: [
-          ...this.state.produtosNoCarrinho,
-          ...filtrarProdutos
-        ]
-      });
+      this.setState(
+        {
+          produtosNoCarrinho: [
+            ...this.state.produtosNoCarrinho,
+            ...filtrarProdutos
+          ]
+        },
+        () => this.setState({ valorTotal: this.calculaTotal() })
+      );
     }
   };
 
@@ -63,9 +82,12 @@ class DataProvider extends Component {
       produto => id !== produto.id
     );
 
-    this.setState({
-      produtosNoCarrinho: [...filtrarProdutos]
-    });
+    this.setState(
+      {
+        produtosNoCarrinho: [...filtrarProdutos]
+      },
+      () => this.setState({ valorTotal: this.calculaTotal() })
+    );
   };
 
   render() {
