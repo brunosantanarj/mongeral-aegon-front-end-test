@@ -23,7 +23,7 @@ class DataProvider extends Component {
       return resultado;
     };
     const total = this.state.produtosNoCarrinho.reduce((a, b) => {
-      return a + converteValor(b.valor);
+      return a + converteValor(b.valor) * b.quantidade;
     }, 0);
 
     return total.toString().replace('.', ',');

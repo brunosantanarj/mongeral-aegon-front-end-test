@@ -30,6 +30,7 @@ const Carrinho = styled('button')`
   border: none;
   border-radius: 100px;
   display: flex;
+  color: ${props => (props.ativo ? colors.verde : colors.cinza)};
   cursor: pointer;
   font-size: 17px;
   font-weight: 700;
@@ -45,6 +46,11 @@ const Carrinho = styled('button')`
   &:focus {
     outline: none;
   }
+
+  span {
+    transition: all 0.25s ease-in-out;
+    transform: scale(${props => (props.ativo ? '1.3' : '1')});
+  }
 `;
 
 const Header = () => (
@@ -52,8 +58,14 @@ const Header = () => (
     {({ state, toggleCarrinho }) => (
       <HeaderStyled>
         <Logo />
-        <Carrinho onClick={toggleCarrinho}>
-          {state.produtosNoCarrinho ? state.produtosNoCarrinho.length : 0}
+        <Carrinho
+          ativo={!!state.produtosNoCarrinho.length > 0}
+          onClick={toggleCarrinho}>
+          {state.produtosNoCarrinho.length > 0 ? (
+            <span>{state.produtosNoCarrinho.length}</span>
+          ) : (
+            <span>0</span>
+          )}
         </Carrinho>
       </HeaderStyled>
     )}

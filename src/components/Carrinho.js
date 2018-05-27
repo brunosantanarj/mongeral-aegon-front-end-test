@@ -93,7 +93,7 @@ const Vazio = styled('div')`
 `;
 
 const CarrinhoLista = styled('div')`
-  padding: 50px 20px;
+  padding: 20px 20px;
 `;
 
 const CarrinhoItem = styled('div')`
@@ -163,7 +163,18 @@ const Remover = styled('button')`
   }
 `;
 
-const Total = styled('div')``;
+const Total = styled('div')`
+  width: 100%;
+  align-items: center;
+  background: ${colors.verde};
+  color: white;
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: center;
+  margin-top: 58px;
+  padding: 20px 10px;
+`;
 
 const Carrinho = () => (
   <DataContext.Consumer>
@@ -187,6 +198,7 @@ const Carrinho = () => (
 
                 {state.produtosNoCarrinho.length > 0 ? (
                   <Fragment>
+                    <Total>Total: R$ {state.valorTotal}</Total>
                     <CarrinhoLista>
                       <TransitionGroup>
                         {state.produtosNoCarrinho.map(fruta => (
@@ -213,7 +225,6 @@ const Carrinho = () => (
                         ))}
                       </TransitionGroup>
                     </CarrinhoLista>
-                    <Total>Total: R$ {state.valorTotal}</Total>
                   </Fragment>
                 ) : (
                   <Vazio>
