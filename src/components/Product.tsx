@@ -1,4 +1,5 @@
 import * as React from 'react';
+import '../styles/Product.scss';
 
 export interface IProductProps {
   available: number;
@@ -9,8 +10,11 @@ export interface IProductProps {
 
 const Product = ({ available, id, name, price }: IProductProps) => {
   return(
-    <li>
-      {`${available}, ${id}, ${name}, ${price}`}
+    <li className="product">
+      <h2>{name}</h2>
+      <p>R${price}</p>
+      <p>Disponível: {available}</p>
+      <button>Comprar</button>
     </li>
   );
 }

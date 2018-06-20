@@ -1,4 +1,10 @@
+.order-by {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .products-list {
   display: grid;
   grid-template-columns: repeat(4, auto);
+  grid-gap: 10px 40px;
 }
