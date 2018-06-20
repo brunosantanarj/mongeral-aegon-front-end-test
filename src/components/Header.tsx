@@ -8,7 +8,7 @@ const Header = () => {
         <a href="javascript:;">Loja de Produtos Inusitados</a>
       </h1>
 
-      <button>Carrinho</button>
+      <button>Carrinho (0)</button>
     </header>
   );
 }

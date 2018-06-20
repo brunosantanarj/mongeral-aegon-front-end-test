@@ -1,0 +1,24 @@
+@import '_variables';
+
+.cart {
+    margin-top: 30px;
+    background-color: $light-color;
+    padding: 10px 20px;
+    text-align: center;
+
+    h3  {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: separate; 
+        border-spacing: 5px;
+        th {
+            border-bottom: 1px solid $border-color;
+            padding-bottom: 5px;
+            font-size: 20px;
+        }
+    }
+}
