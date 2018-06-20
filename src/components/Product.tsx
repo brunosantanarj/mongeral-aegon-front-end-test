@@ -9,9 +9,9 @@ export interface IProductProps {
 
 const Product = ({ available, id, name, price }: IProductProps) => {
   return(
-    <>
+    <li>
       {`${available}, ${id}, ${name}, ${price}`}
-    </>
+    </li>
   );
 }
 
