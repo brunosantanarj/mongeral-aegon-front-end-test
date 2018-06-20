@@ -8,6 +8,7 @@ const ProductsList = () => {
       {
         products.map((product: IProductProps) => (
           <Product
+            key={product.id}
             available={product.available}
             id={product.id}
             name={product.name}

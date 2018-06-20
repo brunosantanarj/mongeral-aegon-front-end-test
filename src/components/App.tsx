@@ -1,11 +1,13 @@
 import * as React from 'react';
-import '../styles/App.css';
+import '../styles/App.scss';
 import ProductList from './ProductsList';
 
 class App extends React.Component {
   public render() {
     return (
-      <ProductList />
+      <div className="App">
+        <ProductList />
+      </div>
     );
   }
 }
