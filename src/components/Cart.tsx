@@ -1,30 +1,42 @@
 import * as React from 'react';
 import '../styles/Cart.scss';
+import { IProduct } from '../types';
 
-const Cart = () => {
+export interface ICartProps {
+  items: IProduct[];
+  total: number;
+  removeProduct?: () => void;
+}
+
+export default function Cart({ items, total, removeProduct = (product: IProduct) => {/* */} }: ICartProps){
   return(
     <section className="cart">
       <h3>Meu Carrinho</h3>
       <table>
-        <tr>
-          <th>Produto</th>
-          <th>Qntd</th>
-          <th>Preço</th>
-        </tr>
-
-        <tr>
-          <td>2x Nome do produto 1</td>
-          <td>2</td>
-          <td>R$300,00</td>
-        </tr>
-
-        <tr>
-          <td colSpan={2}>Total</td>
-          <td>R$600,00</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            items.length > 0 ?
+            items.map(
+              (item, index) => (
+                <tr key={index}>
+                  <td>{item.name}</td>
+                  <td>{item.price}</td>
+                </tr>
+              )
+            ) : <tr><td>Não existem produtos no seu carrinho!</td></tr>
+          }
+          <tr>
+            <td>Total</td>
+            <td>{total}</td>
+          </tr>
+        </tbody>
       </table>
     </section>
   );
 }
-
-export default Cart;

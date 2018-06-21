@@ -2,19 +2,17 @@ import * as React from 'react';
 import '../styles/Product.scss';
 
 export interface IProductProps {
-  available: number;
-  id: number;
-  name: string;
-  price: number;
+  name: string,
+  price: number,
+  onAddProduct: () => void;
 }
 
-const Product = ({ available, id, name, price }: IProductProps) => {
+const Product = ({ name, price, onAddProduct }: IProductProps) => {
   return(
     <li className="product">
       <h2>{name}</h2>
       <p>R${price}</p>
-      <p>Disponível: {available}</p>
-      <button>Comprar</button>
+      <button onClick={onAddProduct}>Comprar</button>
     </li>
   );
 }

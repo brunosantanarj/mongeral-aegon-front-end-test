@@ -1,16 +1,10 @@
 export interface IProduct {
+  id: number,
   name: string,
   price: number
 }
 
-export type ShoppingItem = IProduct & { totalPerItem: number }
-
-export interface IShoppingCart {
-  [key: string]: ShoppingItem;
-}
-
-export interface IShoppingCartState {
-  availableItems: IProduct[];
-  items: IProduct[];
-  total: number;
+export interface IStoreState {
+  items: IProduct[],
+  total: number
 }

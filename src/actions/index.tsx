@@ -2,13 +2,13 @@ import * as constants from '../constants';
 import { IProduct } from "../types";
 
 export interface IAddProduct {
-    product: IProduct;
-    type: constants.ADD_PRODUCT;
+    product: IProduct,
+    type: constants.ADD_PRODUCT
 }
 
 export interface IRemoveProduct {
-    product: IProduct;
-    type: constants.REMOVE_PRODUCT;
+    product: IProduct,
+    type: constants.REMOVE_PRODUCT
 }
 
 export type ShoppingAction = IAddProduct | IRemoveProduct;

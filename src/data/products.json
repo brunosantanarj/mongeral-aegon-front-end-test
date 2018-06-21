@@ -1,24 +1,20 @@
 [
     {
-        "available": 3,
         "id": 1, 
         "name": "Ovos Graúdos", 
         "price": 8.00
     },
     {
-        "available": 1,
         "id": 2, 
         "name": "Ovos Graúdos de Ouro", 
         "price": 2399.99
     },
     {
-        "available": 7,
         "id": 3, 
         "name": "Pamonha Quentinha", 
         "price": 15.47
     },
     {
-        "available": 6,
         "id": 4, 
         "name": "Pikachu do Paraguai", 
         "price": 27.04

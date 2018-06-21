@@ -1,14 +1,11 @@
 import { ShoppingAction } from '../actions';
 import { ADD_PRODUCT, REMOVE_PRODUCT } from '../constants';
-import { IShoppingCartState } from '../types/index';
+import { IStoreState } from '../types/index';
 
-export function shop(state: IShoppingCartState, action: ShoppingAction): IShoppingCartState {
-    const { items } = state;
-    const { product, type } = action;
-    
-    switch (type) {
+export function shop(state: IStoreState, action: ShoppingAction): IStoreState {
+    switch (action.type) {
         case ADD_PRODUCT:
-            const newItems = items.concat([product]);
+            const newItems = state.items.concat([action.product]);
             const newTotal = newItems.reduce( 
                 (total, item) => total + item.price, 
                 0
@@ -18,12 +15,11 @@ export function shop(state: IShoppingCartState, action: ShoppingAction): IShoppi
                 items: newItems, 
                 total: newTotal
                 };
-
         case REMOVE_PRODUCT:
-            const firstItem = items.find( item =>  
-                item.name === product.name );
-            const filteredItems = items.filter( item => item !== firstItem );
-            const newFilteredTotal = filteredItems.reduce(
+            const firstItem = state.items.find(item =>  
+                item.name === action.product.name );
+            const filteredItems = state.items.filter(item => item !== firstItem );
+            const newFilteredTotal = filteredItems.reduce( 
                 (total, item) => total + item.price, 
                 0
             );

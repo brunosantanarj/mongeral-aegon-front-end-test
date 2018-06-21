@@ -1,9 +1,14 @@
 import * as React from 'react';
 import products from '../data/products.json';
 import '../styles/ProductsList.scss';
-import Product, { IProductProps } from './Product';
+import { IProduct } from '../types';
+import Product from './Product';
 
-const ProductsList = () => {
+export interface IProps {
+  addProduct?: (product: IProduct) => void;
+}
+
+const ProductsList = ({ addProduct }: IProps) => {
   return(
     <section>
       <div className="order-by">
@@ -16,13 +21,12 @@ const ProductsList = () => {
       </div>
       <ul className="products-list">
         {
-          products.map((product: IProductProps) => (
+          products.map((product: IProduct, index: number) => (
             <Product
-              key={product.id}
-              available={product.available}
-              id={product.id}
+              key={index}
               name={product.name}
               price={product.price}
+              onAddProduct={() => addProduct!(product)}
             />
           ))
         }
