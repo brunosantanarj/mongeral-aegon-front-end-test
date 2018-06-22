@@ -1,22 +1,50 @@
 [
     {
-        "id": 1, 
-        "name": "Ovos Graúdos", 
-        "price": 8.00
+        "id": 1,
+        "image": "http://rockntech.com.br/wp-content/uploads/2013/11/ideias-alternativas-de-produtos.jpg",
+        "name": "Bala de M&M",
+        "price": 8.14
     },
     {
-        "id": 2, 
-        "name": "Ovos Graúdos de Ouro", 
-        "price": 2399.99
+        "id": 2,
+        "image": "http://rockntech.com.br/wp-content/uploads/2013/11/ideias-alternativas-de-produtos_4.jpg",
+        "name": "Dinamite de TicTac", 
+        "price": 5.87
     },
     {
-        "id": 3, 
-        "name": "Pamonha Quentinha", 
-        "price": 15.47
+        "id": 3,
+        "image": "http://rockntech.com.br/wp-content/uploads/2013/11/ideias-alternativas-de-produtos_6.jpg",
+        "name": "Buzina para acordar criança", 
+        "price": 15.46
     },
     {
-        "id": 4, 
-        "name": "Pikachu do Paraguai", 
+        "id": 4,
+        "image": "http://rockntech.com.br/wp-content/uploads/2013/11/ideias-alternativas-de-produtos_7.jpg",
+        "name": "Camisinha do Kinder Ovo", 
         "price": 27.04
+    },
+    {
+        "id": 5,
+        "image": "http://rockntech.com.br/wp-content/uploads/2013/11/ideias-alternativas-de-produtos_8.jpg",
+        "name": "Sangue de Ketchup", 
+        "price": 13.99
+    },
+    {
+        "id": 6,
+        "image": "http://rockntech.com.br/wp-content/uploads/2013/11/ideias-alternativas-de-produtos_9.jpg",
+        "name": "Potinho de urina Dropbox", 
+        "price": 99.99
+    },
+    {
+        "id": 7,
+        "image": "http://rockntech.com.br/wp-content/uploads/2013/11/ideias-alternativas-de-produtos_17.jpg",
+        "name": "Tênis Burger King", 
+        "price": 35.72
+    },
+    {
+        "id": 8,
+        "image": "http://rockntech.com.br/wp-content/uploads/2013/11/ideias-alternativas-de-produtos_19.jpg",
+        "name": "Extintor Heineken pra ficar doidão", 
+        "price": 95.54
     }
 ]

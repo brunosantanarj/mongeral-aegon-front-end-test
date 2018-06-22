@@ -2,16 +2,20 @@
 
 .product {
     text-align: center;
-    border: 1px solid $border-color;
+    border: 1px solid $secondary-color;
     padding: 10px;
     border-radius: 10px;
-}
 
-button {
-    background-color: $primary-color;
-    color: $light-color;
+    .name {
+        font-size: 20px;
+    }
 
-    &:active {
-        background-color: $secondary-color;
+    img {
+        height: 200px;
+        margin: 10px auto;
+    }
+
+    .price {
+        font-size: 18px;
     }
 }

@@ -1,3 +1,27 @@
+@import '_variables';
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: $secondary-color;
+}
+
 .wrapper {
   padding: 15px 30px;
+}
+
+button {
+  background-color: $primary-color;
+  color: $light-color;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+
+    &:active {
+        background-color: $secondary-color;
+    }
 }

@@ -24,6 +24,7 @@ const ProductsList = ({ addProduct }: IProps) => {
           products.map((product: IProduct, index: number) => (
             <Product
               key={index}
+              image={product.image}
               name={product.name}
               price={product.price}
               onAddProduct={() => addProduct(product)}
