@@ -5,10 +5,10 @@ import { IProduct } from '../types';
 export interface ICartProps {
   items: IProduct[];
   total: number;
-  removeProduct?: () => void;
+  removeProduct: (product: IProduct) => void;
 }
 
-export default function Cart({ items, total, removeProduct = (product: IProduct) => {/* */} }: ICartProps){
+export default function Cart({ items, total, removeProduct }: ICartProps){
   return(
     <section className="cart">
       <h3>Meu Carrinho</h3>
@@ -17,16 +17,18 @@ export default function Cart({ items, total, removeProduct = (product: IProduct)
           <tr>
             <th>Produto</th>
             <th>Preço</th>
+            <th>Remover</th>
           </tr>
         </thead>
         <tbody>
           {
             items.length > 0 ?
             items.map(
-              (item, index) => (
+              (product, index) => (
                 <tr key={index}>
-                  <td>{item.name}</td>
-                  <td>{item.price}</td>
+                  <td>{product.name}</td>
+                  <td>{product.price}</td>
+                  <td><button onClick={() => removeProduct(product)}>Remover</button></td>
                 </tr>
               )
             ) : <tr><td>Não existem produtos no seu carrinho!</td></tr>

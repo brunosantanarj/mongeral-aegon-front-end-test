@@ -33,14 +33,14 @@
 
 "@types/react-redux@^6.0.2":
   version "6.0.2"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/@types/react-redux/-/react-redux-6.0.2.tgz?dl=https://registry.npmjs.org/@types/react-redux/-/react-redux-6.0.2.tgz#10069b53db8e0920fd8656e068dcf10c53c9ad2a"
+  resolved "https://registry.yarnpkg.com/@types/react-redux/-/react-redux-6.0.2.tgz#10069b53db8e0920fd8656e068dcf10c53c9ad2a"
   dependencies:
     "@types/react" "*"
     redux "^4.0.0"
 
 "@types/react@*", "@types/react@^16.4.0":
-  version "16.4.0"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.0.tgz#f7f639837bf1f8635f57616b12a1b0d193b6343a"
+  version "16.4.1"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.1.tgz#c53bbfb4a78933db587da085ac60dbf5fcf73f8f"
   dependencies:
     csstype "^2.2.0"
 
@@ -89,7 +89,7 @@ ajv-keywords@^3.1.0:
 
 ajv@^4.9.1:
   version "4.11.8"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/ajv/-/ajv-4.11.8.tgz?dl=https://registry.npmjs.org/ajv/-/ajv-4.11.8.tgz#82ffb02b29e662ae53bdc20af15947706739c536"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-4.11.8.tgz#82ffb02b29e662ae53bdc20af15947706739c536"
   dependencies:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
@@ -294,7 +294,7 @@ assert-plus@1.0.0, assert-plus@^1.0.0:
 
 assert-plus@^0.2.0:
   version "0.2.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/assert-plus/-/assert-plus-0.2.0.tgz?dl=https://registry.npmjs.org/assert-plus/-/assert-plus-0.2.0.tgz#d74e1b87e7affc0db8aadb7021f3fe48101ab234"
+  resolved "https://registry.yarnpkg.com/assert-plus/-/assert-plus-0.2.0.tgz#d74e1b87e7affc0db8aadb7021f3fe48101ab234"
 
 assert@^1.1.1:
   version "1.4.1"
@@ -316,7 +316,7 @@ async-each@^1.0.0:
 
 async-foreach@^0.1.3:
   version "0.1.3"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/async-foreach/-/async-foreach-0.1.3.tgz?dl=https://registry.npmjs.org/async-foreach/-/async-foreach-0.1.3.tgz#36121f845c0578172de419a97dbeb1d16ec34542"
+  resolved "https://registry.yarnpkg.com/async-foreach/-/async-foreach-0.1.3.tgz#36121f845c0578172de419a97dbeb1d16ec34542"
 
 async-limiter@~1.0.0:
   version "1.0.0"
@@ -364,7 +364,7 @@ autoprefixer@^6.3.1:
 
 aws-sign2@~0.6.0:
   version "0.6.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/aws-sign2/-/aws-sign2-0.6.0.tgz?dl=https://registry.npmjs.org/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
+  resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
 
 aws-sign2@~0.7.0:
   version "0.7.0"
@@ -1045,7 +1045,7 @@ binary-extensions@^1.0.0:
 
 block-stream@*:
   version "0.0.9"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/block-stream/-/block-stream-0.0.9.tgz?dl=https://registry.npmjs.org/block-stream/-/block-stream-0.0.9.tgz#13ebfe778a03205cfe03751481ebb4b3300c126a"
+  resolved "https://registry.yarnpkg.com/block-stream/-/block-stream-0.0.9.tgz#13ebfe778a03205cfe03751481ebb4b3300c126a"
   dependencies:
     inherits "~2.0.0"
 
@@ -1089,7 +1089,7 @@ boolbase@~1.0.0:
 
 boom@2.x.x:
   version "2.10.1"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/boom/-/boom-2.10.1.tgz?dl=https://registry.npmjs.org/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
+  resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
   dependencies:
     hoek "2.x.x"
 
@@ -1352,7 +1352,7 @@ case-sensitive-paths-webpack-plugin@2.1.1:
 
 caseless@~0.11.0:
   version "0.11.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/caseless/-/caseless-0.11.0.tgz?dl=https://registry.npmjs.org/caseless/-/caseless-0.11.0.tgz#715b96ea9841593cc33067923f5ec60ebda4f7d7"
+  resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.11.0.tgz#715b96ea9841593cc33067923f5ec60ebda4f7d7"
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -1497,7 +1497,7 @@ cliui@^4.0.0:
 
 clone-deep@^2.0.1:
   version "2.0.2"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/clone-deep/-/clone-deep-2.0.2.tgz?dl=https://registry.npmjs.org/clone-deep/-/clone-deep-2.0.2.tgz#00db3a1e173656730d1188c3d6aced6d7ea97713"
+  resolved "https://registry.yarnpkg.com/clone-deep/-/clone-deep-2.0.2.tgz#00db3a1e173656730d1188c3d6aced6d7ea97713"
   dependencies:
     for-own "^1.0.0"
     is-plain-object "^2.0.4"
@@ -1774,14 +1774,14 @@ cross-spawn@5.1.0, cross-spawn@^5.0.1:
 
 cross-spawn@^3.0.0:
   version "3.0.1"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/cross-spawn/-/cross-spawn-3.0.1.tgz?dl=https://registry.npmjs.org/cross-spawn/-/cross-spawn-3.0.1.tgz#1256037ecb9f0c5f79e3d6ef135e30770184b982"
+  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-3.0.1.tgz#1256037ecb9f0c5f79e3d6ef135e30770184b982"
   dependencies:
     lru-cache "^4.0.1"
     which "^1.2.9"
 
 cryptiles@2.x.x:
   version "2.0.5"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/cryptiles/-/cryptiles-2.0.5.tgz?dl=https://registry.npmjs.org/cryptiles/-/cryptiles-2.0.5.tgz#3bdfecdc608147c1c67202fa291e7dca59eaa3b8"
+  resolved "https://registry.yarnpkg.com/cryptiles/-/cryptiles-2.0.5.tgz#3bdfecdc608147c1c67202fa291e7dca59eaa3b8"
   dependencies:
     boom "2.x.x"
 
@@ -2219,8 +2219,8 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.30:
-  version "1.3.48"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.48.tgz#d3b0d8593814044e092ece2108fc3ac9aea4b900"
+  version "1.3.50"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.50.tgz#7438b76f92b41b919f3fbdd350fbd0757dacddf7"
 
 elliptic@^6.0.0:
   version "6.4.0"
@@ -2751,7 +2751,7 @@ follow-redirects@^1.0.0:
 
 for-in@^0.1.3:
   version "0.1.8"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/for-in/-/for-in-0.1.8.tgz?dl=https://registry.npmjs.org/for-in/-/for-in-0.1.8.tgz#d8773908e31256109952b1fdb9b3fa867d2775e1"
+  resolved "https://registry.yarnpkg.com/for-in/-/for-in-0.1.8.tgz#d8773908e31256109952b1fdb9b3fa867d2775e1"
 
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
@@ -2765,7 +2765,7 @@ for-own@^0.1.4:
 
 for-own@^1.0.0:
   version "1.0.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/for-own/-/for-own-1.0.0.tgz?dl=https://registry.npmjs.org/for-own/-/for-own-1.0.0.tgz#c63332f415cedc4b04dbfe70cf836494c53cb44b"
+  resolved "https://registry.yarnpkg.com/for-own/-/for-own-1.0.0.tgz#c63332f415cedc4b04dbfe70cf836494c53cb44b"
   dependencies:
     for-in "^1.0.1"
 
@@ -2792,7 +2792,7 @@ fork-ts-checker-webpack-plugin@^0.2.8:
 
 form-data@~2.1.1:
   version "2.1.4"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/form-data/-/form-data-2.1.4.tgz?dl=https://registry.npmjs.org/form-data/-/form-data-2.1.4.tgz#33c183acf193276ecaa98143a69e94bfee1750d1"
+  resolved "https://registry.yarnpkg.com/form-data/-/form-data-2.1.4.tgz#33c183acf193276ecaa98143a69e94bfee1750d1"
   dependencies:
     asynckit "^0.4.0"
     combined-stream "^1.0.5"
@@ -2881,7 +2881,7 @@ fsevents@^1.0.0, fsevents@^1.2.2, fsevents@^1.2.3:
 
 fstream@^1.0.0, fstream@^1.0.2:
   version "1.0.11"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/fstream/-/fstream-1.0.11.tgz?dl=https://registry.npmjs.org/fstream/-/fstream-1.0.11.tgz#5c1fb1f117477114f0632a0eb4b71b3cb0fd3171"
+  resolved "https://registry.yarnpkg.com/fstream/-/fstream-1.0.11.tgz#5c1fb1f117477114f0632a0eb4b71b3cb0fd3171"
   dependencies:
     graceful-fs "^4.1.2"
     inherits "~2.0.0"
@@ -2907,17 +2907,17 @@ gauge@~2.7.3:
 
 gaze@^1.0.0:
   version "1.1.3"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/gaze/-/gaze-1.1.3.tgz?dl=https://registry.npmjs.org/gaze/-/gaze-1.1.3.tgz#c441733e13b927ac8c0ff0b4c3b033f28812924a"
+  resolved "https://registry.yarnpkg.com/gaze/-/gaze-1.1.3.tgz#c441733e13b927ac8c0ff0b4c3b033f28812924a"
   dependencies:
     globule "^1.0.0"
 
 generate-function@^2.0.0:
   version "2.0.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/generate-function/-/generate-function-2.0.0.tgz?dl=https://registry.npmjs.org/generate-function/-/generate-function-2.0.0.tgz#6858fe7c0969b7d4e9093337647ac79f60dfbe74"
+  resolved "https://registry.yarnpkg.com/generate-function/-/generate-function-2.0.0.tgz#6858fe7c0969b7d4e9093337647ac79f60dfbe74"
 
 generate-object-property@^1.1.0:
   version "1.2.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/generate-object-property/-/generate-object-property-1.2.0.tgz?dl=https://registry.npmjs.org/generate-object-property/-/generate-object-property-1.2.0.tgz#9c0e1c40308ce804f4783618b937fa88f99d50d0"
+  resolved "https://registry.yarnpkg.com/generate-object-property/-/generate-object-property-1.2.0.tgz#9c0e1c40308ce804f4783618b937fa88f99d50d0"
   dependencies:
     is-property "^1.0.0"
 
@@ -2971,7 +2971,7 @@ glob2base@^0.0.12:
 
 glob@^6.0.4:
   version "6.0.4"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/glob/-/glob-6.0.4.tgz?dl=https://registry.npmjs.org/glob/-/glob-6.0.4.tgz#0f08860f6a155127b2fadd4f9ce24b1aab6e4d22"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-6.0.4.tgz#0f08860f6a155127b2fadd4f9ce24b1aab6e4d22"
   dependencies:
     inflight "^1.0.4"
     inherits "2"
@@ -3041,7 +3041,7 @@ globby@^6.1.0:
 
 globule@^1.0.0:
   version "1.2.1"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/globule/-/globule-1.2.1.tgz?dl=https://registry.npmjs.org/globule/-/globule-1.2.1.tgz#5dffb1b191f22d20797a9369b49eab4e9839696d"
+  resolved "https://registry.yarnpkg.com/globule/-/globule-1.2.1.tgz#5dffb1b191f22d20797a9369b49eab4e9839696d"
   dependencies:
     glob "~7.1.1"
     lodash "~4.17.10"
@@ -3093,7 +3093,7 @@ handlebars@^4.0.3:
 
 har-schema@^1.0.5:
   version "1.0.5"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/har-schema/-/har-schema-1.0.5.tgz?dl=https://registry.npmjs.org/har-schema/-/har-schema-1.0.5.tgz#d263135f43307c02c602afc8fe95970c0151369e"
+  resolved "https://registry.yarnpkg.com/har-schema/-/har-schema-1.0.5.tgz#d263135f43307c02c602afc8fe95970c0151369e"
 
 har-schema@^2.0.0:
   version "2.0.0"
@@ -3101,7 +3101,7 @@ har-schema@^2.0.0:
 
 har-validator@~2.0.6:
   version "2.0.6"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/har-validator/-/har-validator-2.0.6.tgz?dl=https://registry.npmjs.org/har-validator/-/har-validator-2.0.6.tgz#cdcbc08188265ad119b6a5a7c8ab70eecfb5d27d"
+  resolved "https://registry.yarnpkg.com/har-validator/-/har-validator-2.0.6.tgz#cdcbc08188265ad119b6a5a7c8ab70eecfb5d27d"
   dependencies:
     chalk "^1.1.1"
     commander "^2.9.0"
@@ -3110,7 +3110,7 @@ har-validator@~2.0.6:
 
 har-validator@~4.2.1:
   version "4.2.1"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/har-validator/-/har-validator-4.2.1.tgz?dl=https://registry.npmjs.org/har-validator/-/har-validator-4.2.1.tgz#33481d0f1bbff600dd203d75812a6a5fba002e2a"
+  resolved "https://registry.yarnpkg.com/har-validator/-/har-validator-4.2.1.tgz#33481d0f1bbff600dd203d75812a6a5fba002e2a"
   dependencies:
     ajv "^4.9.1"
     har-schema "^1.0.5"
@@ -3193,7 +3193,7 @@ hash.js@^1.0.0, hash.js@^1.0.3:
 
 hawk@~3.1.3:
   version "3.1.3"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/hawk/-/hawk-3.1.3.tgz?dl=https://registry.npmjs.org/hawk/-/hawk-3.1.3.tgz#078444bd7c1640b0fe540d2c9b73d59678e8e1c4"
+  resolved "https://registry.yarnpkg.com/hawk/-/hawk-3.1.3.tgz#078444bd7c1640b0fe540d2c9b73d59678e8e1c4"
   dependencies:
     boom "2.x.x"
     cryptiles "2.x.x"
@@ -3214,11 +3214,11 @@ hmac-drbg@^1.0.0:
 
 hoek@2.x.x:
   version "2.16.3"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/hoek/-/hoek-2.16.3.tgz?dl=https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
+  resolved "https://registry.yarnpkg.com/hoek/-/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
 
 hoist-non-react-statics@^2.5.0:
   version "2.5.5"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz?dl=https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
 
 home-or-tmp@^2.0.0:
   version "2.0.0"
@@ -3337,7 +3337,7 @@ http-proxy@^1.16.2:
 
 http-signature@~1.1.0:
   version "1.1.1"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/http-signature/-/http-signature-1.1.1.tgz?dl=https://registry.npmjs.org/http-signature/-/http-signature-1.1.1.tgz#df72e267066cd0ac67fb76adf8e134a8fbcf91bf"
+  resolved "https://registry.yarnpkg.com/http-signature/-/http-signature-1.1.1.tgz#df72e267066cd0ac67fb76adf8e134a8fbcf91bf"
   dependencies:
     assert-plus "^0.2.0"
     jsprim "^1.2.2"
@@ -3413,7 +3413,7 @@ imurmurhash@^0.1.4:
 
 in-publish@^2.0.0:
   version "2.0.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/in-publish/-/in-publish-2.0.0.tgz?dl=https://registry.npmjs.org/in-publish/-/in-publish-2.0.0.tgz#e20ff5e3a2afc2690320b6dc552682a9c7fadf51"
+  resolved "https://registry.yarnpkg.com/in-publish/-/in-publish-2.0.0.tgz#e20ff5e3a2afc2690320b6dc552682a9c7fadf51"
 
 indent-string@^2.1.0:
   version "2.1.0"
@@ -3652,11 +3652,11 @@ is-installed-globally@^0.1.0:
 
 is-my-ip-valid@^1.0.0:
   version "1.0.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/is-my-ip-valid/-/is-my-ip-valid-1.0.0.tgz?dl=https://registry.npmjs.org/is-my-ip-valid/-/is-my-ip-valid-1.0.0.tgz#7b351b8e8edd4d3995d4d066680e664d94696824"
+  resolved "https://registry.yarnpkg.com/is-my-ip-valid/-/is-my-ip-valid-1.0.0.tgz#7b351b8e8edd4d3995d4d066680e664d94696824"
 
 is-my-json-valid@^2.12.4:
   version "2.17.2"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/is-my-json-valid/-/is-my-json-valid-2.17.2.tgz?dl=https://registry.npmjs.org/is-my-json-valid/-/is-my-json-valid-2.17.2.tgz#6b2103a288e94ef3de5cf15d29dd85fc4b78d65c"
+  resolved "https://registry.yarnpkg.com/is-my-json-valid/-/is-my-json-valid-2.17.2.tgz#6b2103a288e94ef3de5cf15d29dd85fc4b78d65c"
   dependencies:
     generate-function "^2.0.0"
     generate-object-property "^1.1.0"
@@ -3734,7 +3734,7 @@ is-promise@^2.1.0:
 
 is-property@^1.0.0:
   version "1.0.2"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/is-property/-/is-property-1.0.2.tgz?dl=https://registry.npmjs.org/is-property/-/is-property-1.0.2.tgz#57fe1c4e48474edd65b09911f26b1cd4095dda84"
+  resolved "https://registry.yarnpkg.com/is-property/-/is-property-1.0.2.tgz#57fe1c4e48474edd65b09911f26b1cd4095dda84"
 
 is-redirect@^1.0.0:
   version "1.0.0"
@@ -4273,7 +4273,7 @@ jsonify@~0.0.0:
 
 jsonpointer@^4.0.0:
   version "4.0.1"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/jsonpointer/-/jsonpointer-4.0.1.tgz?dl=https://registry.npmjs.org/jsonpointer/-/jsonpointer-4.0.1.tgz#4fd92cb34e0e9db3c89c8622ecf51f9b978c6cb9"
+  resolved "https://registry.yarnpkg.com/jsonpointer/-/jsonpointer-4.0.1.tgz#4fd92cb34e0e9db3c89c8622ecf51f9b978c6cb9"
 
 jsprim@^1.2.2:
   version "1.4.1"
@@ -4394,7 +4394,7 @@ locate-path@^2.0.0:
 
 lodash-es@^4.17.5:
   version "4.17.10"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/lodash-es/-/lodash-es-4.17.10.tgz?dl=https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.10.tgz#62cd7104cdf5dd87f235a837f0ede0e8e5117e05"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.10.tgz#62cd7104cdf5dd87f235a837f0ede0e8e5117e05"
 
 lodash._reinterpolate@~3.0.0:
   version "3.0.0"
@@ -4402,7 +4402,7 @@ lodash._reinterpolate@~3.0.0:
 
 lodash.assign@^4.2.0:
   version "4.2.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/lodash.assign/-/lodash.assign-4.2.0.tgz?dl=https://registry.npmjs.org/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
+  resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
 
 lodash.camelcase@^4.3.0:
   version "4.3.0"
@@ -4410,7 +4410,7 @@ lodash.camelcase@^4.3.0:
 
 lodash.clonedeep@^4.3.2:
   version "4.5.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz?dl=https://registry.npmjs.org/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
+  resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
 
 lodash.debounce@^4.0.8:
   version "4.0.8"
@@ -4438,7 +4438,7 @@ lodash.memoize@^4.1.2:
 
 lodash.mergewith@^4.6.0:
   version "4.6.1"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/lodash.mergewith/-/lodash.mergewith-4.6.1.tgz?dl=https://registry.npmjs.org/lodash.mergewith/-/lodash.mergewith-4.6.1.tgz#639057e726c3afbdb3e7d42741caa8d6e4335927"
+  resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.1.tgz#639057e726c3afbdb3e7d42741caa8d6e4335927"
 
 lodash.sortby@^4.7.0:
   version "4.7.0"
@@ -4450,7 +4450,7 @@ lodash.startswith@^4.2.1:
 
 lodash.tail@^4.1.1:
   version "4.1.1"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/lodash.tail/-/lodash.tail-4.1.1.tgz?dl=https://registry.npmjs.org/lodash.tail/-/lodash.tail-4.1.1.tgz#d2333a36d9e7717c8ad2f7cacafec7c32b444664"
+  resolved "https://registry.yarnpkg.com/lodash.tail/-/lodash.tail-4.1.1.tgz#d2333a36d9e7717c8ad2f7cacafec7c32b444664"
 
 lodash.template@^4.4.0:
   version "4.4.0"
@@ -4471,7 +4471,7 @@ lodash.uniq@^4.5.0:
 
 "lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@~4.17.10:
   version "4.17.10"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/lodash/-/lodash-4.17.10.tgz?dl=https://registry.npmjs.org/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
 loglevel@^1.4.1:
   version "1.6.1"
@@ -4738,7 +4738,7 @@ mixin-deep@^1.2.0:
 
 mixin-object@^2.0.1:
   version "2.0.1"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/mixin-object/-/mixin-object-2.0.1.tgz?dl=https://registry.npmjs.org/mixin-object/-/mixin-object-2.0.1.tgz#4fb949441dab182540f1fe035ba60e1947a5e57e"
+  resolved "https://registry.yarnpkg.com/mixin-object/-/mixin-object-2.0.1.tgz#4fb949441dab182540f1fe035ba60e1947a5e57e"
   dependencies:
     for-in "^0.1.3"
     is-extendable "^0.1.1"
@@ -4843,7 +4843,7 @@ node-forge@0.7.5:
 
 node-gyp@^3.3.1:
   version "3.7.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/node-gyp/-/node-gyp-3.7.0.tgz?dl=https://registry.npmjs.org/node-gyp/-/node-gyp-3.7.0.tgz#789478e8f6c45e277aa014f3e28f958f286f9203"
+  resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-3.7.0.tgz#789478e8f6c45e277aa014f3e28f958f286f9203"
   dependencies:
     fstream "^1.0.0"
     glob "^7.0.3"
@@ -4916,7 +4916,7 @@ node-pre-gyp@^0.10.0:
 
 node-sass@^4.9.0:
   version "4.9.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/node-sass/-/node-sass-4.9.0.tgz?dl=https://registry.npmjs.org/node-sass/-/node-sass-4.9.0.tgz#d1b8aa855d98ed684d6848db929a20771cc2ae52"
+  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.9.0.tgz#d1b8aa855d98ed684d6848db929a20771cc2ae52"
   dependencies:
     async-foreach "^0.1.3"
     chalk "^1.1.1"
@@ -4940,7 +4940,7 @@ node-sass@^4.9.0:
 
 "nopt@2 || 3":
   version "3.0.6"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/nopt/-/nopt-3.0.6.tgz?dl=https://registry.npmjs.org/nopt/-/nopt-3.0.6.tgz#c6465dbf08abcd4db359317f79ac68a646b28ff9"
+  resolved "https://registry.yarnpkg.com/nopt/-/nopt-3.0.6.tgz#c6465dbf08abcd4db359317f79ac68a646b28ff9"
   dependencies:
     abbrev "1"
 
@@ -5326,7 +5326,7 @@ pbkdf2@^3.0.3:
 
 performance-now@^0.2.0:
   version "0.2.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/performance-now/-/performance-now-0.2.0.tgz?dl=https://registry.npmjs.org/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
+  resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
 
 performance-now@^2.1.0:
   version "2.1.0"
@@ -5648,8 +5648,8 @@ postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0
     supports-color "^3.2.3"
 
 postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.13:
-  version "6.0.22"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.22.tgz#e23b78314905c3b90cbd61702121e7a78848f2a3"
+  version "6.0.23"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
   dependencies:
     chalk "^2.4.1"
     source-map "^0.6.1"
@@ -5786,11 +5786,11 @@ qs@6.5.1:
 
 qs@~6.3.0:
   version "6.3.2"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/qs/-/qs-6.3.2.tgz?dl=https://registry.npmjs.org/qs/-/qs-6.3.2.tgz#e75bd5f6e268122a2a0e0bda630b2550c166502c"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.3.2.tgz#e75bd5f6e268122a2a0e0bda630b2550c166502c"
 
 qs@~6.4.0:
   version "6.4.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/qs/-/qs-6.4.0.tgz?dl=https://registry.npmjs.org/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
 
 qs@~6.5.1:
   version "6.5.2"
@@ -5902,7 +5902,7 @@ react-error-overlay@^4.0.0:
 
 react-redux@^5.0.7:
   version "5.0.7"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/react-redux/-/react-redux-5.0.7.tgz?dl=https://registry.npmjs.org/react-redux/-/react-redux-5.0.7.tgz#0dc1076d9afb4670f993ffaef44b8f8c1155a4c8"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.7.tgz#0dc1076d9afb4670f993ffaef44b8f8c1155a4c8"
   dependencies:
     hoist-non-react-statics "^2.5.0"
     invariant "^2.0.0"
@@ -6015,7 +6015,7 @@ reduce-function-call@^1.0.1:
 
 redux@^4.0.0:
   version "4.0.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/redux/-/redux-4.0.0.tgz?dl=https://registry.npmjs.org/redux/-/redux-4.0.0.tgz#aa698a92b729315d22b34a0553d7e6533555cc03"
+  resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.0.tgz#aa698a92b729315d22b34a0553d7e6533555cc03"
   dependencies:
     loose-envify "^1.1.0"
     symbol-observable "^1.2.0"
@@ -6136,7 +6136,7 @@ request-promise-native@^1.0.5:
 
 "request@>=2.9.0 <2.82.0":
   version "2.81.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/request/-/request-2.81.0.tgz?dl=https://registry.npmjs.org/request/-/request-2.81.0.tgz#c6928946a0e06c5f8d6f8a9333469ffda46298a0"
+  resolved "https://registry.yarnpkg.com/request/-/request-2.81.0.tgz#c6928946a0e06c5f8d6f8a9333469ffda46298a0"
   dependencies:
     aws-sign2 "~0.6.0"
     aws4 "^1.2.1"
@@ -6188,7 +6188,7 @@ request@^2.83.0:
 
 request@~2.79.0:
   version "2.79.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/request/-/request-2.79.0.tgz?dl=https://registry.npmjs.org/request/-/request-2.79.0.tgz#4dfe5bf6be8b8cdc37fcf93e04b65577722710de"
+  resolved "https://registry.yarnpkg.com/request/-/request-2.79.0.tgz#4dfe5bf6be8b8cdc37fcf93e04b65577722710de"
   dependencies:
     aws-sign2 "~0.6.0"
     aws4 "^1.2.1"
@@ -6355,7 +6355,7 @@ sane@^2.0.0:
 
 sass-graph@^2.2.4:
   version "2.2.4"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/sass-graph/-/sass-graph-2.2.4.tgz?dl=https://registry.npmjs.org/sass-graph/-/sass-graph-2.2.4.tgz#13fbd63cd1caf0908b9fd93476ad43a51d1e0b49"
+  resolved "https://registry.yarnpkg.com/sass-graph/-/sass-graph-2.2.4.tgz#13fbd63cd1caf0908b9fd93476ad43a51d1e0b49"
   dependencies:
     glob "^7.0.0"
     lodash "^4.0.0"
@@ -6364,7 +6364,7 @@ sass-graph@^2.2.4:
 
 sass-loader@^7.0.3:
   version "7.0.3"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/sass-loader/-/sass-loader-7.0.3.tgz?dl=https://registry.npmjs.org/sass-loader/-/sass-loader-7.0.3.tgz#6ca10871a1cc7549f8143db5a9958242c4e4ca2a"
+  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-7.0.3.tgz#6ca10871a1cc7549f8143db5a9958242c4e4ca2a"
   dependencies:
     clone-deep "^2.0.1"
     loader-utils "^1.0.1"
@@ -6391,7 +6391,7 @@ schema-utils@^0.4.5:
 
 scss-tokenizer@^0.2.3:
   version "0.2.3"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/scss-tokenizer/-/scss-tokenizer-0.2.3.tgz?dl=https://registry.npmjs.org/scss-tokenizer/-/scss-tokenizer-0.2.3.tgz#8eb06db9a9723333824d3f5530641149847ce5d1"
+  resolved "https://registry.yarnpkg.com/scss-tokenizer/-/scss-tokenizer-0.2.3.tgz#8eb06db9a9723333824d3f5530641149847ce5d1"
   dependencies:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
@@ -6418,7 +6418,7 @@ semver-diff@^2.0.0:
 
 semver@~5.3.0:
   version "5.3.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/semver/-/semver-5.3.0.tgz?dl=https://registry.npmjs.org/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
 
 send@0.16.2:
   version "0.16.2"
@@ -6514,7 +6514,7 @@ sha.js@^2.4.0, sha.js@^2.4.8:
 
 shallow-clone@^1.0.0:
   version "1.0.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/shallow-clone/-/shallow-clone-1.0.0.tgz?dl=https://registry.npmjs.org/shallow-clone/-/shallow-clone-1.0.0.tgz#4480cd06e882ef68b2ad88a3ea54832e2c48b571"
+  resolved "https://registry.yarnpkg.com/shallow-clone/-/shallow-clone-1.0.0.tgz#4480cd06e882ef68b2ad88a3ea54832e2c48b571"
   dependencies:
     is-extendable "^0.1.1"
     kind-of "^5.0.0"
@@ -6580,7 +6580,7 @@ snapdragon@^0.8.1:
 
 sntp@1.x.x:
   version "1.0.9"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/sntp/-/sntp-1.0.9.tgz?dl=https://registry.npmjs.org/sntp/-/sntp-1.0.9.tgz#6541184cc90aeea6c6e7b35e2659082443c66198"
+  resolved "https://registry.yarnpkg.com/sntp/-/sntp-1.0.9.tgz#6541184cc90aeea6c6e7b35e2659082443c66198"
   dependencies:
     hoek "2.x.x"
 
@@ -6758,7 +6758,7 @@ statuses@~1.4.0:
 
 stdout-stream@^1.4.0:
   version "1.4.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/stdout-stream/-/stdout-stream-1.4.0.tgz?dl=https://registry.npmjs.org/stdout-stream/-/stdout-stream-1.4.0.tgz#a2c7c8587e54d9427ea9edb3ac3f2cd522df378b"
+  resolved "https://registry.yarnpkg.com/stdout-stream/-/stdout-stream-1.4.0.tgz#a2c7c8587e54d9427ea9edb3ac3f2cd522df378b"
   dependencies:
     readable-stream "^2.0.1"
 
@@ -6832,7 +6832,7 @@ string_decoder@~0.10.x:
 
 stringstream@~0.0.4:
   version "0.0.6"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/stringstream/-/stringstream-0.0.6.tgz?dl=https://registry.npmjs.org/stringstream/-/stringstream-0.0.6.tgz#7880225b0d4ad10e30927d167a1d6f2fd3b33a72"
+  resolved "https://registry.yarnpkg.com/stringstream/-/stringstream-0.0.6.tgz#7880225b0d4ad10e30927d167a1d6f2fd3b33a72"
 
 strip-ansi@3.0.1, strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   version "3.0.1"
@@ -6949,7 +6949,7 @@ sw-toolbox@^3.4.0:
 
 symbol-observable@^1.2.0:
   version "1.2.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/symbol-observable/-/symbol-observable-1.2.0.tgz?dl=https://registry.npmjs.org/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
+  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
 
 symbol-tree@^3.2.2:
   version "3.2.2"
@@ -6961,7 +6961,7 @@ tapable@^0.2.7:
 
 tar@^2.0.0:
   version "2.2.1"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/tar/-/tar-2.2.1.tgz?dl=https://registry.npmjs.org/tar/-/tar-2.2.1.tgz#8e4d2a256c0e2185c6b18ad694aec968b83cb1d1"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-2.2.1.tgz#8e4d2a256c0e2185c6b18ad694aec968b83cb1d1"
   dependencies:
     block-stream "*"
     fstream "^1.0.2"
@@ -7105,7 +7105,7 @@ trim-right@^1.0.1:
 
 "true-case-path@^1.0.2":
   version "1.0.2"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/true-case-path/-/true-case-path-1.0.2.tgz?dl=https://registry.npmjs.org/true-case-path/-/true-case-path-1.0.2.tgz#7ec91130924766c7f573be3020c34f8fdfd00d62"
+  resolved "https://registry.yarnpkg.com/true-case-path/-/true-case-path-1.0.2.tgz#7ec91130924766c7f573be3020c34f8fdfd00d62"
   dependencies:
     glob "^6.0.4"
 
@@ -7198,7 +7198,7 @@ tunnel-agent@^0.6.0:
 
 tunnel-agent@~0.4.1:
   version "0.4.3"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/tunnel-agent/-/tunnel-agent-0.4.3.tgz?dl=https://registry.npmjs.org/tunnel-agent/-/tunnel-agent-0.4.3.tgz#6373db76909fe570e08d73583365ed828a74eeeb"
+  resolved "https://registry.yarnpkg.com/tunnel-agent/-/tunnel-agent-0.4.3.tgz#6373db76909fe570e08d73583365ed828a74eeeb"
 
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
@@ -7272,8 +7272,8 @@ uglifyjs-webpack-plugin@^0.4.6:
     webpack-sources "^1.0.1"
 
 uglifyjs-webpack-plugin@^1.1.8:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-1.2.5.tgz#2ef8387c8f1a903ec5e44fa36f9f3cbdcea67641"
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-1.2.6.tgz#f4bb44f02431e82b301d8d4624330a6a35729381"
   dependencies:
     cacache "^10.0.4"
     find-cache-dir "^1.0.0"
@@ -7320,8 +7320,8 @@ unique-string@^1.0.0:
     crypto-random-string "^1.0.0"
 
 universalify@^0.1.0:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.1.tgz#fa71badd4437af4c148841e3b3b165f9e9e590b7"
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/universalify/-/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
@@ -7576,7 +7576,7 @@ webpack-sources@^1.0.1, webpack-sources@^1.1.0:
 
 webpack@^3.8.1:
   version "3.12.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/webpack/-/webpack-3.12.0.tgz?dl=https://registry.npmjs.org/webpack/-/webpack-3.12.0.tgz#3f9e34360370602fcf639e97939db486f4ec0d74"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-3.12.0.tgz#3f9e34360370602fcf639e97939db486f4ec0d74"
   dependencies:
     acorn "^5.0.0"
     acorn-dynamic-import "^2.0.0"
@@ -7752,7 +7752,7 @@ yargs-parser@^4.2.0:
 
 yargs-parser@^5.0.0:
   version "5.0.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/yargs-parser/-/yargs-parser-5.0.0.tgz?dl=https://registry.npmjs.org/yargs-parser/-/yargs-parser-5.0.0.tgz#275ecf0d7ffe05c77e64e7c86e4cd94bf0e1228a"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-5.0.0.tgz#275ecf0d7ffe05c77e64e7c86e4cd94bf0e1228a"
   dependencies:
     camelcase "^3.0.0"
 
@@ -7805,7 +7805,7 @@ yargs@^6.6.0:
 
 yargs@^7.0.0:
   version "7.1.0"
-  resolved "https://artifactory.globoi.com/artifactory/api/npm/shield/yargs/-/yargs-7.1.0.tgz?dl=https://registry.npmjs.org/yargs/-/yargs-7.1.0.tgz#6ba318eb16961727f5d284f8ea003e8d6154d0c8"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-7.1.0.tgz#6ba318eb16961727f5d284f8ea003e8d6154d0c8"
   dependencies:
     camelcase "^3.0.0"
     cliui "^3.2.0"

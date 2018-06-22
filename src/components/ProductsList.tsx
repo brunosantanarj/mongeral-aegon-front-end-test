@@ -5,7 +5,7 @@ import { IProduct } from '../types';
 import Product from './Product';
 
 export interface IProps {
-  addProduct?: (product: IProduct) => void;
+  addProduct: (product: IProduct) => void;
 }
 
 const ProductsList = ({ addProduct }: IProps) => {
@@ -26,7 +26,7 @@ const ProductsList = ({ addProduct }: IProps) => {
               key={index}
               name={product.name}
               price={product.price}
-              onAddProduct={() => addProduct!(product)}
+              onAddProduct={() => addProduct(product)}
             />
           ))
         }
