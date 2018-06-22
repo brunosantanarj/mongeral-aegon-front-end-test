@@ -1,6 +1,7 @@
 export interface IProduct {
   id: number,
   image: string,
+  inventory: number,
   name: string,
   price: number
 }

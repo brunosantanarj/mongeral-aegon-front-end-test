@@ -21,7 +21,6 @@ export function addProduct(product: IProduct): IAddProduct {
 }
 
 export function removeProduct(product: IProduct): IRemoveProduct {
-    window.console.log(product);
     return {
         product,
         type: constants.REMOVE_PRODUCT

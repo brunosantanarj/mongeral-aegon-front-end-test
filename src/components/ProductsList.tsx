@@ -25,6 +25,7 @@ const ProductsList = ({ addProduct }: IProps) => {
             <Product
               key={index}
               image={product.image}
+              inventory={product.inventory}
               name={product.name}
               price={product.price}
               onAddProduct={() => addProduct(product)}
