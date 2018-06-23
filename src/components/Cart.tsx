@@ -3,12 +3,11 @@ import '../styles/Cart.scss';
 import { IProduct } from '../types';
 
 export interface ICartProps {
-  items: IProduct[];
+  products: IProduct[];
   total: number;
-  removeProduct: (product: IProduct) => void;
 }
 
-export default function Cart({ items, total, removeProduct }: ICartProps){
+export default function Cart({ products, total }: any){
   return(
     <section className="cart">
       <h3>Meu Carrinho</h3>
@@ -16,26 +15,26 @@ export default function Cart({ items, total, removeProduct }: ICartProps){
         <thead>
           <tr>
             <th>Produto</th>
+            <th>Quantidade</th>
             <th>Preço</th>
-            <th>Remover</th>
           </tr>
         </thead>
         <tbody>
           {
-            items.length > 0 ?
-            items.map(
-              (product, index) => (
+            products.length > 0 ?
+            products.map(
+              (product: any, index: number) => (
                 <tr key={index}>
                   <td>{product.name}</td>
-                  <td>{product.price}</td>
-                  <td><button onClick={() => removeProduct(product)}>Remover</button></td>
+                  <td>{product.quantity}</td>
+                  <td>R${product.price}</td>
                 </tr>
               )
             ) : <tr><td>Não existem produtos no seu carrinho!</td></tr>
           }
           <tr>
-            <td>Total</td>
-            <td>{total}</td>
+            <td colSpan={2}>Total</td>
+            <td>R${total}</td>
           </tr>
         </tbody>
       </table>

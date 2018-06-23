@@ -1,14 +1,13 @@
 import * as React from 'react';
-import products from '../data/products.json';
 import '../styles/ProductsList.scss';
 import { IProduct } from '../types';
 import Product from './Product';
 
 export interface IProps {
-  addProduct: (product: IProduct) => void;
+  addToCart: (productId: number) => void;
 }
 
-const ProductsList = ({ addProduct }: IProps) => {
+const ProductsList = ({ products, addToCart }: any) => {
   return(
     <section>
       <div className="order-by">
@@ -25,9 +24,10 @@ const ProductsList = ({ addProduct }: IProps) => {
             <Product
               key={index}
               image={product.image}
+              inventory={product.inventory}
               name={product.name}
               price={product.price}
-              onAddProduct={() => addProduct(product)}
+              onAddProduct={() => addToCart(product.id)}
             />
           ))
         }

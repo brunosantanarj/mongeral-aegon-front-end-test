@@ -1,20 +1,13 @@
-import { connect, Dispatch } from 'react-redux';
-import * as actions from '../actions';
+import { connect } from 'react-redux';
 import Cart from '../components/Cart';
-import { IProduct, IStoreState } from '../types';
+import { getCartProducts, getTotal } from '../reducers';
+import { IStoreState } from '../types';
 
-export function mapStateToProps({ items, total }: IStoreState) {
+export function mapStateToProps(state: IStoreState) {
     return {
-        items,
-        total
+        products: getCartProducts(state),
+        total: getTotal(state)
     };
 }
 
-export function mapDispatchToProps(dispatch: Dispatch<actions.ShoppingAction>) {
-    return {
-        // addProduct: (product: IProduct) => dispatch(actions.addProduct(product)),
-        removeProduct: (product: IProduct) => dispatch(actions.removeProduct(product))
-    };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Cart);
+export default connect(mapStateToProps)(Cart);

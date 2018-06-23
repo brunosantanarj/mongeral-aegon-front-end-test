@@ -1,29 +1,37 @@
+import { Dispatch } from 'react-redux';
 import * as constants from '../constants';
 import { IProduct } from "../types";
 
 export interface IAddProduct {
-    product: IProduct,
+    productId: number,
     type: constants.ADD_PRODUCT
 }
 
-export interface IRemoveProduct {
-    product: IProduct,
-    type: constants.REMOVE_PRODUCT
+export interface IGetProducts {
+  products: IProduct[],
+  type: constants.GET_PRODUCTS
 }
 
-export type ShoppingAction = IAddProduct | IRemoveProduct;
+export type ShoppingAction = IAddProduct & IGetProducts;
 
-export function addProduct(product: IProduct): IAddProduct {
-    return {
-        product,
-        type: constants.ADD_PRODUCT
-    };
+export function getProducts(products: IProduct[]) {
+  return {
+    products,
+    type: constants.GET_PRODUCTS,
+  }
 }
 
-export function removeProduct(product: IProduct): IRemoveProduct {
-    window.console.log(product);
-    return {
-        product,
-        type: constants.REMOVE_PRODUCT
-    };
+export function addToCart(productId: number) {
+  return (dispatch: Dispatch, getState: any)   => {
+    if (getState().products.byId[productId].inventory > 0) {
+      dispatch(addProduct(productId))
+    }
+  }
+}
+
+function addProduct(productId: number) {
+  return {
+    productId,
+    type: constants.ADD_PRODUCT,
+  } 
 }

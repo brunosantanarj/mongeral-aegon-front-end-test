@@ -1,18 +1,18 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import { ShoppingAction } from './actions';
+import { applyMiddleware, createStore } from 'redux';
+import thunk from 'redux-thunk';
+import { getProducts } from './actions';
 import App from './components/App';
-import { shop } from './reducers';
+import products from './data/products.json';
+import reducers from './reducers';
 import registerServiceWorker from './registerServiceWorker';
-import { IStoreState } from './types';
 
+const middleware = [ thunk ];
+const store = createStore(reducers, applyMiddleware(...middleware));
 
-const store = createStore<IStoreState, ShoppingAction, any, any>(shop, {
-  items: [],
-  total: 0
-});
+store.dispatch(getProducts(products))
 
 ReactDOM.render(
   <Provider store={store}>

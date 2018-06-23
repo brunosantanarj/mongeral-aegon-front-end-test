@@ -1,34 +1,21 @@
-import { ShoppingAction } from '../actions';
-import { ADD_PRODUCT, REMOVE_PRODUCT } from '../constants';
-import { IStoreState } from '../types/index';
+import { combineReducers } from 'redux';
+import { IStoreState } from '../types';
+import cart, { getAddedIds, getQuantity } from './cart'
+import products, * as fromProducts from './products'
 
-export function shop(state: IStoreState, action: ShoppingAction): IStoreState {
-    switch (action.type) {
-        case ADD_PRODUCT:
-            const newItems = state.items.concat([action.product]);
-            const newTotal = newItems.reduce( 
-                (total, item) => total + item.price, 
-                0
-            );
-            return { 
-                ...state,
-                items: newItems, 
-                total: newTotal
-                };
-        case REMOVE_PRODUCT:
-            const firstItem = state.items.find(item =>  
-                item.name === action.product.name );
-            const filteredItems = state.items.filter(item => item !== firstItem );
-            const newFilteredTotal = filteredItems.reduce( 
-                (total, item) => total + item.price, 
-                0
-            );
-            return { 
-                ...state, 
-                items: filteredItems,
-                total: newFilteredTotal
-            };
-        default:
-            return state;
-    }
+export default combineReducers({
+  cart,
+  products
+});
+
+export function getTotal(state: IStoreState) {
+  return getAddedIds(state.cart).reduce((total, id) =>
+      total + fromProducts.getProduct(state.products, id).price * getQuantity(state.cart, id), 0).toFixed(2)
+}
+
+export function getCartProducts(state: IStoreState) {
+  return getAddedIds(state.cart).map((id: number) => ({
+    ...fromProducts.getProduct(state.products, id),
+    quantity: getQuantity(state.cart, id)
+  }))
 }

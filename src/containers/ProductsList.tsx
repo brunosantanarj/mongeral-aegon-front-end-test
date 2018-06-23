@@ -1,20 +1,13 @@
-import { connect, Dispatch } from 'react-redux';
-import * as actions from '../actions';
+import { connect } from 'react-redux';
+import { addToCart } from '../actions';
 import ProductsList from '../components/ProductsList';
-import { IProduct, IStoreState } from '../types';
+import { getVisibleProducts } from '../reducers/products';
+import { IStoreState } from '../types';
 
-export function mapStateToProps({ items, total }: IStoreState) {
+export function mapStateToProps(state: IStoreState) {
     return {
-        items,
-        total
+        products: getVisibleProducts(state.products)
     };
 }
 
-export function mapDispatchToProps(dispatch: Dispatch<actions.ShoppingAction>) {
-    return {
-        addProduct: (product: IProduct) => dispatch(actions.addProduct(product)),
-        removeProduct: (product: IProduct) => dispatch(actions.removeProduct(product))
-    };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(ProductsList);
+export default connect(mapStateToProps, { addToCart })(ProductsList);
