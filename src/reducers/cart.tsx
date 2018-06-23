@@ -1,5 +1,5 @@
 import { ShoppingAction } from '../actions';
-import { ADD_PRODUCT } from '../constants';
+import { ADD_PRODUCT, REMOVE_PRODUCT } from '../constants';
 import { ICartState } from '../types';
 
 const initialState: ICartState = {
@@ -7,12 +7,19 @@ const initialState: ICartState = {
   quantityById: []
 }
 
-function idOnCart(state: number[] = initialState.idOnCart, action: ShoppingAction) {
+function idOnCart(state: any = initialState.idOnCart, action: ShoppingAction) {
     const { productId, type } = action;
-    
+
     switch (type) {
       case ADD_PRODUCT:
         return state.indexOf(productId) !== -1 ? state : [...state, productId];
+
+      case REMOVE_PRODUCT:
+        // const index = state.indexOf(productId);
+
+        // return [
+        //   ...state.slice(0, index)
+        // ]
 
       default:
         return state;
@@ -20,11 +27,14 @@ function idOnCart(state: number[] = initialState.idOnCart, action: ShoppingActio
   }
   
 function quantityById (state: number[] = initialState.quantityById, action: ShoppingAction) {
+  const { productId } = action;
+
   switch (action.type) {
     case ADD_PRODUCT:
-      const { productId } = action
-      
       return {...state, [productId]: (state[productId] || 0) + 1 };
+
+    case REMOVE_PRODUCT:
+      return {...state, [productId]: 0 };
 
     default:
       return state;

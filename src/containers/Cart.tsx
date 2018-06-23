@@ -1,7 +1,9 @@
 import { connect } from 'react-redux';
+import { removeProduct } from '../actions';
 import Cart from '../components/Cart';
 import { getCartProducts, getTotal } from '../reducers';
 import { IStoreState } from '../types';
+
 
 export function mapStateToProps(state: IStoreState) {
     return {
@@ -10,4 +12,4 @@ export function mapStateToProps(state: IStoreState) {
     };
 }
 
-export default connect(mapStateToProps)(Cart);
+export default connect(mapStateToProps, { removeProduct })(Cart);

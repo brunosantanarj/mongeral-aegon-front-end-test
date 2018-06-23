@@ -1,15 +1,23 @@
 import { combineReducers } from 'redux';
 import { ShoppingAction } from '../actions';
-import { ADD_PRODUCT, GET_PRODUCTS } from '../constants';
+import { ADD_PRODUCT, GET_PRODUCTS, REMOVE_PRODUCT } from '../constants';
 import { IProduct, IProductState } from '../types';
 
 export function products(state: IProduct, action: ShoppingAction) {
+
+  // let initialState= state;
+
   switch (action.type) {
     case ADD_PRODUCT:
       return {
         ...state,
         inventory: state.inventory - 1
       };
+    case REMOVE_PRODUCT:
+      return {
+        ...state,
+        inventory: state.inventory + action.quantity
+      }
     default:
       return state;
   }
