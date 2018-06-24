@@ -1,17 +1,5 @@
 @import '_variables';
 
-.order-by {
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 20px;
-
-  select {
-    font-size: 18px;
-    margin-left: 10px;
-    background-color: $light-color;
-  }
-}
-
 .products-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

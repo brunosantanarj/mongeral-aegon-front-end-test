@@ -10,14 +10,6 @@ export interface IProps {
 const ProductsList = ({ products, addToCart }: any) => {
   return(
     <section>
-      <div className="order-by">
-        <label htmlFor="order">Ordernar por:</label>
-        <select id="order">
-          <option>Mais barato</option>
-          <option>Mais caro</option>
-          <option>Nome</option>
-        </select>
-      </div>
       <ul className="products-list">
         {
           products.map((product: IProduct, index: number) => (
