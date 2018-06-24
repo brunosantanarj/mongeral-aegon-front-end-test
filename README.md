@@ -2,9 +2,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+- [install](#npm-install-or-yarn-install)
 - [start](#npm-start-or-yarn-start)
 - [test](#npm-test-or-yarn-test)
 - [build](#npm-run-build-or-yarn-build)
+- [run build](#yarn-run-build)
+
+### `npm install` or `yarn install`
+
+Install project's dependencies in order to run.
 
 ### `npm start` or `yarn start`
 
@@ -26,3 +32,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
+
+### `yarn global add serve` then  `serve -s build`
+
+Runs the build folder.
