@@ -1,3 +1,9 @@
 $primary-color: #00c454;
 $secondary-color: #06602e;
 $light-color: #ecf0f1;
+
+// Media Query
+$desktop-md: "only screen and (max-width : 1200px)";
+$tablet: "only screen and (max-width : 992px)";
+$phone: "only screen and (max-width : 768px)";
+$phone-sm: "only screen and (max-width : 480px)";

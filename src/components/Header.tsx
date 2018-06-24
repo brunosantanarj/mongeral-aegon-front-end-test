@@ -8,11 +8,11 @@ const Header = () => {
     <header>
       <h1>
         <a href="javascript:;">
-          <img src={logo} alt="Loja de Produtos Inusitados" />
+          <img className="logo" src={logo} alt="Loja de Produtos Inusitados" />
         </a>
       </h1>
 
-      <button>Carrinho</button>
+      <button className="cart-button">Carrinho</button>
       <Cart />
     </header>
   );
