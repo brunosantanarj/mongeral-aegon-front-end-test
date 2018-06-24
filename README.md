@@ -1,38 +1,38 @@
-# Desafio Front-End Mongeral Aegon
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-Faça um _fork_ deste projeto e ao final um _Pull Request_.
+## Available Scripts
 
-O Desafio consiste em criar um _layout_ simples com boxes, títulos, imagens e algumas funcionalidades/iterações básicas de um _e-commerce_.
+- [install](#npm-install-or-yarn-install)
+- [start](#npm-start-or-yarn-start)
+- [test](#npm-test-or-yarn-test)
+- [build](#npm-run-build-or-yarn-build)
+- [run build](#yarn-run-build)
 
-### O que esperamos ?
-* Boa lógica de Programação
-* Angular 2+, React ou Vue
-* ES6+
-* TDD/BDD
-* Boas práticas e padrões
-* Performance e acessibilidade
-* Instalação de dependências automáticas
+### `npm install` or `yarn install`
 
-### Obrigatórios
-* O _layout_ deve conter o _Header_, vitrine de produtos (cada produto deve ter um id, título, preço e um botão de comprar) e um carrinho de compra com o valor total dos produtos e os produtos escolhidos
-* Popular uma vitrine de produtos a partir de um JSON
+Install project's dependencies in order to run.
 
-### Funcionalidades desejáveis
-* Ordenar produtos
-* Adicionar e remover produtos do carrinho
-* Valor total dos produtos no carrinho
+### `npm start` or `yarn start`
 
-### Desejáveis técnicos que agregam pontos
-* Design Responsivo, CSS GRID, Flexbox, SCSS, boas práticas e padrões de arquitetura CSS
-* Padrões eslint ou tslint (para angular)
-* Testes com Jest, Karma ou Mocha
-* Design Patterns e Padrões de Arquitetura em JS
-* Consumo de _API REST_
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-#### Observações
-* Se utilizar React, utilize o Redux e Enzyme
-* Se utilizar Vue, utilize o vuex para gerenciar a store
-* Se utilizar Angular, utilize o RxJS
-* O prazo de até 5 dias, após o _fork_, para entrega do Desafio
-* É interessante que os _commits_ sejam pequenos para expor de forma mais clara a linha de raciocínio
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
+### `npm test` or `yarn test`
+
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](#running-tests) for more information.
+
+### `npm run build` or `yarn build`
+
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
+
+### `yarn global add serve` then  `serve -s build`
+
+Runs the build folder.

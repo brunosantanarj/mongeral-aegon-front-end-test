@@ -1,0 +1,19 @@
+@import '_variables';
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+
+  @media#{$desktop-md} {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media#{$tablet} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media#{$phone} {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,25 @@
+@import '_variables';
+
+.product {
+    text-align: center;
+    border: 1px solid $secondary-color;
+    padding: 10px;
+    border-radius: 10px;
+
+    .name {
+        font-size: 20px;
+    }
+
+    img {
+        height: 200px;
+        margin: 10px auto;
+
+        @media#{$phone-sm} {
+            height: 100px;
+        }
+    }
+
+    .price {
+        font-size: 18px;
+    }
+}

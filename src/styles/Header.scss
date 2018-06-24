@@ -1,0 +1,24 @@
+@import '_variables';
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid $secondary-color;
+  vertical-align: middle;
+
+  .logo {
+    @media#{$phone-sm} {
+      width: 100px;
+    }
+  }
+
+  .cart-button {
+    @media#{$phone-sm} {
+      font-size: 14px;
+    }
+  }
+}
