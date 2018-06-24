@@ -4,9 +4,6 @@ import { ADD_PRODUCT, GET_PRODUCTS, REMOVE_PRODUCT } from '../constants';
 import { IProduct, IProductState } from '../types';
 
 export function products(state: IProduct, action: ShoppingAction) {
-
-  // let initialState= state;
-
   switch (action.type) {
     case ADD_PRODUCT:
       return {

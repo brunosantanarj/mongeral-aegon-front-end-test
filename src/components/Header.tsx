@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Cart from '../containers/Cart';
 import logo from '../images/logo.jpg';
 import '../styles/Header.scss';
 
@@ -11,7 +12,8 @@ const Header = () => {
         </a>
       </h1>
 
-      <button>Carrinho (0)</button>
+      <button>Carrinho</button>
+      <Cart />
     </header>
   );
 }
